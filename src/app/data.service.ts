@@ -15,7 +15,7 @@ import { NgModule } from '@angular/core';
 })
 export class DataService {
   public result1;id:any
-  API_URL  =  'http://localhost:8080/';
+  API_URL  =  'http://103.207.1.123:83/';
  public product:any;
   constructor(private  http:  HttpClient) { }
 
@@ -71,11 +71,11 @@ getitems(type){
 //     let headers=new HttpHeaders();
 //     headers.append('Content-Type', 'application/json');
 //     headers.append('Accept', 'application/json');
-//     console.log(credentials) 
+//     console.log(credentials)
 //     this.http.post(this.API_URL+type, credentials,{headers: headers}).
 //     subscribe(data =>{
 //       console.log(credentials);
-//       resolve(data);      
+//       resolve(data);
 //       console.log(data);
 //     },(err) =>{
 //       reject(err);
@@ -95,7 +95,7 @@ getAdmin(details,type){
       console.log("success");
       resolve(data);
     },(err)=>{
-      reject(err);  
+      reject(err);
     });
   });
 
@@ -136,10 +136,8 @@ postDetails(details,type){
       console.log("success");
       resolve(data);
     },(err)=>{
-      reject(err);  
+      reject(err);
     });
   });
 }
 }
-
- 
