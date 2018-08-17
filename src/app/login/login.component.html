@@ -1,6 +1,6 @@
 
 
-  <div class="container" id="LoginForm">
+  <div class="container-fill" id="LoginForm" >
     <!-- <h1 class="form-heading">login Form</h1> -->
     <div class="login-form">
     <div class="main-div">
@@ -9,29 +9,29 @@
        <p>Please enter your email and password</p>
        </div>
         <form id="Login" (submit)="login($event)">
-    
+
             <div class="form-group">
-    
-    
+
+
                 <input type="text" class="form-control" id="inputEmail" placeholder="User name">
-    
+
             </div>
-    
+
             <div class="form-group">
-    
+
                 <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-    
+
             </div>
-           
+
             <button type="submit" class="btn btn-primary">Login</button>
-             
+
         </form>
         </div>
         <div >
             <button type="button" data-toggle="modal" (click)="openModalDialog()">
               Forgot password?
               </button>
-            
+
          </div>
          <div>
            <p>New user?</p>
@@ -40,10 +40,10 @@
     <!-- <p class="botto-text"> Designed by Sunil Rajput</p> -->
     </div>
   </div>
-  
-  
-  
-  
+
+
+
+
   <!-- The Modal -->
   <div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':display}">
       <!-- modal-dialog -->
@@ -55,7 +55,7 @@
             <button type="button" class="close" aria-label="Close" (click)="closeModalDialog()"><span aria-hidden="true">&times;</span></button>
             <!-- <h4 class="modal-title">Login</h4> -->
           </div>
-    
+
           <!-- modal-body -->
           <div class="modal-body" id="vicky1">
             <div class="align1">
@@ -71,10 +71,10 @@
                      <p>Don`t have an accout?</p>
                      <a routerLink="/signup">Signup</a>
                 </div>
-                
+
             </div>
           </div>
-    
+
           <!-- modal-footer -->
           <div class="modal-footer">
             <button type="button" class="btn btn-default" (click)="closeModalDialog()" >Close</button>
@@ -82,5 +82,3 @@
         </div>
       </div>
     </div>
-  
-    
